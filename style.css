@@ -16,8 +16,8 @@ header {
     text-align: center;
 }
 
-header img {
-    width: 150px;
+.logo {
+    width: 100px; /* ajuste o tamanho conforme necessário */
     height: auto;
 }
 
@@ -29,7 +29,7 @@ header img {
 }
 
 .produto {
-    width: 250px;
+    width: 200px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 10px;
