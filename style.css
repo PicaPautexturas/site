@@ -1,70 +1,49 @@
-/* Reset CSS básico para limpar estilos padrão do navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 80%;
-    margin: auto;
-    padding: 20px;
+    margin: 0 auto;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
 header img {
-    width: 100px; /* Ajuste conforme necessário */
+    width: 150px;
+    height: auto;
 }
 
 .produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .produto {
+    width: 250px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 10px;
+    text-align: center;
 }
 
 .produto img {
     width: 100%;
-    max-width: 200px; /* Ajuste conforme necessário */
     height: auto;
 }
 
-.produto h2 {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.produto p {
-    margin-top: 5px;
-    font-size: 14px;
-}
-
-.preco {
-    font-weight: bold;
-    color: #008000; /* Verde para preço */
-}
-
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #f8f9fa;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 50px;
 }
