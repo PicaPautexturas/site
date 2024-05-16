@@ -12,6 +12,19 @@ body {
 header {
     text-align: center;
 }
+.botao-whatsapp {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao-whatsapp:hover {
+    background-color: darkgreen;
+}
+
 
 .logo {
     width: 100px; /* ajuste o tamanho conforme necessário */
