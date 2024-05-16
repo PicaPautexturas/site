@@ -2,24 +2,53 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* cor de fundo */
 }
 
 .container {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 0;
     text-align: center;
 }
 
 .logo {
-    width: 50px; /* ajuste o tamanho conforme necessário */
+    width: 200px; /* ajuste o tamanho conforme necessário */
     height: auto;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
 }
 
 .produtos {
@@ -30,7 +59,7 @@ header {
 }
 
 .produto {
-    width: 100px;
+    width: 200px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -43,13 +72,5 @@ header {
 }
 
 footer {
-    padding: 20px 0;
     text-align: center;
-    margin-top: 50px;
-}
-
-.banner {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
 }
