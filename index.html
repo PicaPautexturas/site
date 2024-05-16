@@ -1,42 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Loja de Grafiato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/logofinal.jpg" alt="Logo da Loja de Grafiato" class="logo">
-        <img src="images/capaFinal1.jpg" alt="Banner 1" class="banner">
+        <div class="container">
+            <img src="placeholder_logofinal.jpg" alt="Logo da Empresa" class="logo">
+            <img src="placeholder_capaFinal.jpg" alt="Banner da Página" class="banner">
+        </div>
     </header>
-    <a href="https://wa.me/seunumeroaqui?text=Olá! Gostaria de um orçamento." class="botao-whatsapp">Contato via WhatsApp</a>
-
-
+    
     <nav>
-        <ul class="menu">
-            <li><a href="#produtos">Veja Abaixo Nossos Produtos</a></li>
-            <!-- Adicione mais opções de menu conforme necessário -->
-        </ul>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
     </nav>
-    <main class="container" id="produtos">
-        <section class="produtos">
-            <div class="produto">
-                <img src="images/produto2.jpg" alt="Produto 1">
-                <h2>Grafiato Texturizado</h2>
-                <p>Balde de grafiato 30kgs</p>
-                <span class="preco">R$ 50,00</span>
+    
+    <main class="container">
+        <section>
+            <div class="container">
+                <h2>Seção de Destaque</h2>
+                <p>Texto de destaque sobre os produtos ou serviços oferecidos.</p>
+                <a href="#" class="cta-button">Saiba Mais</a>
             </div>
-            <!-- Adicione mais produtos conforme necessário -->
-                 <div class="produto">
-                <img src="images/produto2.jpg" alt="Produto 1">
-                <h2>Grafiato Texturizado</h2>
-                <p>Balde de grafiato 30kgs</p>
-                <span class="preco">R$ 50,00</span>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div class="produto">
+                    <img src="placeholder_produto1.jpg" alt="Produto 1">
+                    <h3>Nome do Produto 1</h3>
+                    <p>Barrica de textura 30kilos.</p>
+                    <a href="#" class="cta-button">Ver Detalhes</a>
+                </div>
+                
+                <div class="produto">
+                    <img src="placeholder_produto2.jpg" alt="Produto 2">
+                    <h3>Nome do Produto 2</h3>
+                    <p>Descrição breve do Produto 2.</p>
+                    <a href="#" class="cta-button">Ver Detalhes</a>
+                </div>
             </div>
         </section>
     </main>
-      <img src="images/logofinalNoTxt.jpg" alt="Logo da Loja de Grafiato" class="logo">
-      <img src="images/capaFinal.jpg" alt="Banner 1" class="banner">
-    <
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nome da Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
