@@ -59,7 +59,7 @@ nav {
 }
 
 .produto {
-    width: 200px; /* ajuste o tamanho conforme necessário */
+    width: 50px; /* ajuste o tamanho conforme necessário */
     margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -67,7 +67,7 @@ nav {
 }
 
 .produto img {
-    width: 80%; /* ajuste o tamanho conforme necessário */
+    width: 50%; /* ajuste o tamanho conforme necessário */
     height: auto;
 }
 
