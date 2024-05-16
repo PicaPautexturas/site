@@ -12,6 +12,7 @@ body {
 header {
     text-align: center;
 }
+
 .botao-whatsapp {
     background-color: green;
     color: white;
@@ -19,12 +20,13 @@ header {
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer; /* Adicionado para indicar que é clicável */
+    transition: background-color 0.3s; /* Adicionado para uma transição suave de cor ao passar o mouse */
 }
 
 .botao-whatsapp:hover {
     background-color: darkgreen;
 }
-
 
 .logo {
     width: 100px; /* ajuste o tamanho conforme necessário */
