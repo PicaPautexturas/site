@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    width: 80px; /* ajuste o tamanho conforme necessário */
+    width: 50px; /* ajuste o tamanho conforme necessário */
     height: auto;
 }
 
