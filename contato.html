@@ -1,13 +1,155 @@
-Formulário de contato para os visitantes enviarem mensagens.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa XYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services, .about, .contact {
+            margin: 20px 0;
+        }
+        .services h2, .about h2, .contact h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .services p, .about p, .contact p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        .social-links a {
+            display: block;
+            color: #4CAF50;
+            margin: 5px 0;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .social-links a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
 
-            <p>Entre em contato conosco para mais informações:</p>
-            <p>Email: picapautexturas@gmail.com.br</p>
-            <p>Telefone: (11) 2296-7837</p>
-            <p>Endereço: Rua Marcos Aper, 10 -  São Paulo, SP</p>
+<header>
+    <h1>Bem-vindo à Empresa XYZ</h1>
+</header>
 
-Nos encontre nas redes sociais!
+<nav>
+    <a href="#home">Início</a>
+    <a href="#services">Serviços</a>
+    <a href="#about">Sobre Nós</a>
+    <a href="#contact">Contato</a>
+</nav>
 
-<h1>https://www.facebook.com/profile.php?id=61559821162892<h1/>
-<h1></h1>https://www.instagram.com/picapautexturas/<h1/>
+<div class="container">
+    <section id="home">
+        <h2>Início</h2>
+        <p>Bem-vindo ao nosso site! Estamos dedicados a fornecer os melhores serviços para nossos clientes.</p>
+    </section>
 
-<a href="https://wa.me/SEUNUMERODOTELEFONE?text=Olá! Gostaria de entrar em contato." class="botao-whatsapp">Contato via WhatsApp</a>
+    <section id="services" class="services">
+        <h2>Serviços</h2>
+        <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades:</p>
+        <ul>
+            <li>Consultoria</li>
+            <li>Desenvolvimento de Software</li>
+            <li>Marketing Digital</li>
+            <li>Suporte Técnico</li>
+        </ul>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>A Empresa XYZ foi fundada em 2020 com a missão de oferecer soluções inovadoras e eficientes para nossos clientes. Nossa equipe é composta por profissionais altamente qualificados e dedicados.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações:</p>
+        <p>Email: picapautexturas@gmail.com.br</p>
+        <p>Telefone: (11) 2296-7837</p>
+        <p>Endereço: Rua Marcos Aper, 10 - São Paulo, SP</p>
+
+        <div class="social-links">
+            <p>Nos encontre nas redes sociais!</p>
+            <a href="https://www.facebook.com/profile.php?id=61559821162892" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/picapautexturas/" target="_blank">Instagram</a>
+        </div>
+
+        <p><a href="https://wa.me/SEUNUMERODOTELEFONE?text=Olá! Gostaria de entrar em contato." class="botao-whatsapp">Contato via WhatsApp</a></p>
+
+        <form class="contact-form" action="mailto:picapautexturas@gmail.com.br" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Empresa XYZ. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
