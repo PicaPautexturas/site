@@ -17,6 +17,20 @@
             padding: 1rem 0;
             text-align: center;
         }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -35,14 +49,14 @@
         .container {
             padding: 20px;
         }
-        .services, .about {
+        .section {
             margin: 20px 0;
         }
-        .services h2, .about h2 {
+        .section h2 {
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 10px;
         }
-        .services p, .about p {
+        .section p {
             margin: 10px 0;
         }
         footer {
@@ -57,49 +71,53 @@
     </style>
 </head>
 <body>
- <header>
+    <header>
         <div class="container">
             <img src="logofinal.png" alt="Logo da Loja de Grafiato" class="logo">
-
+            <img src="banner.jpg" alt="Banner da Loja de Grafiato" class="banner">
         </div>
     </header>
-<header>
-    <h1>Bem-vindo à Pica Pau Texturas</h1>
-</header>
 
-<nav>
-    <a href="#index.html">Início</a>
-    <a href="#produtos.html">produtos</a>
-    <a href="#sobre.html">Sobre Nós</a>
-</nav>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 
-<div class="container">
-    <section id="index.html">
-        <h2>Início</h2>
-        <p>Bem-vindo ao nosso site! Estamos dedicados a fornecer os melhores produtos para texturas e pinturas.</p>
-         <p>Bem-vindo ao nosso site! Estamos dedicados a fornecer os melhores produtos para texturas e pinturas.</p>
-    </section>
+    <div class="container">
+        <section class="section" id="inicio">
+            <h2>Início</h2>
+            <p>Bem-vindo ao nosso site! Estamos dedicados a fornecer os melhores produtos para texturas e pinturas.</p>
+        </section>
 
-    <section id="produtos" class="produtos">
-        <h2>Serviços</h2>
-        <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades:</p>
-        <ul>
-            <li>Consultoria</li>
-            <li>Desenvolvimento de Software</li>
-            <li>Marketing Digital</li>
-            <li>Suporte Técnico</li>
-        </ul>
-    </section>
+        <section class="section" id="produtos">
+            <h2>Produtos</h2>
+            <p>Confira nossa ampla gama de produtos de grafiato:</p>
+            <ul>
+                <li>Grafiato Texturizado</li>
+                <li>Grafiato Lisa</li>
+                <li>Texturas Decorativas</li>
+                <li>Tintas Especiais</li>
+            </ul>
+        </section>
 
-    <section id="sobre" class="sobre">
-        <h2>Sobre Nós</h2>
-        <p>A Empresa XYZ foi fundada em 2020 com a missão de oferecer soluções inovadoras e eficientes para nossos clientes. Nossa equipe é composta por profissionais altamente qualificados e dedicados.</p>
-    </section>
-</div>
+        <section class="section" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>A PicaPau Texturas foi fundada com a missão de oferecer soluções inovadoras e eficientes para nossos clientes. Nossa equipe é composta por profissionais altamente qualificados e dedicados.</p>
+        </section>
 
-<footer>
-    <p>&copy; 2024 Empresa XYZ. Todos os direitos reservados.</p>
-</footer>
+        <section class="section" id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações:</p>
+            <p>Email: contato@picapautexturas.com.br</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+        </section>
+    </div>
 
+    <footer>
+        <p>&copy; 2024 PicaPau Texturas. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
