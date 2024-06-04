@@ -1,41 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Grafiato</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PicaPau Texturas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services, .about {
+            margin: 20px 0;
+        }
+        .services h2, .about h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .services p, .about p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="logofinal.png" alt="Logo da Loja de Grafiato" class="logo">
-            <img src="capaFinal.jpg" alt="Banner da Loja de Grafiato" class="banner">
-        </div>
-    </header>
-    
-    <nav>
-        <div class="container">
-            <ul class="menu">
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <main class="container">
-        <section>
-            <h2>Bem-vindo à Loja de Grafiato</h2>
-            <p>Encontre os melhores produtos de grafiato para deixar sua casa ainda mais bonita!</p>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Loja de Grafiato. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+
+<header>
+    <h1>Bem-vindo à Empresa Pica Pau</h1>
+</header>
+
+<nav>
+    <a href="#home">Início</a>
+    <a href="#produtos">produtos</a>
+    <a href="#sobre">Sobre Nós</a>
+</nav>
+
+<div class="container">
+    <section id="home">
+        <h2>Início</h2>
+        <p>Bem-vindo ao nosso site! Estamos dedicados a fornecer os melhores serviços para nossos clientes.</p>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Serviços</h2>
+        <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades:</p>
+        <ul>
+            <li>Consultoria</li>
+            <li>Desenvolvimento de Software</li>
+            <li>Marketing Digital</li>
+            <li>Suporte Técnico</li>
+        </ul>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Empresa XYZ foi fundada em 2020 com a missão de oferecer soluções inovadoras e eficientes para nossos clientes. Nossa equipe é composta por profissionais altamente qualificados e dedicados.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Empresa XYZ. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
