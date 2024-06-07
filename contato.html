@@ -3,139 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PicaPau Texturas</title>
-    <style>
-        /* Estilo global para o corpo da página */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        /* Estilo para o cabeçalho da página */
-        header {
-            background-color: #d3d3d3;
-            color: #333;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Container do cabeçalho para alinhar os elementos centralmente */
-        header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* Estilo para a logo */
-        .logo {
-            width: 150px;
-            height: auto;
-        }
-
-        /* Estilo para o título no cabeçalho */
-        header h1 {
-            font-size: 2rem;
-            margin: 0;
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        /* Estilo para o botão de WhatsApp */
-        .whatsapp-button {
-            display: flex;
-            align-items: center;
-            background-color: #25d366;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Estilo para o ícone do WhatsApp */
-        .whatsapp-button img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-        }
-
-        /* Estilo para o botão de WhatsApp quando passamos o mouse sobre ele */
-        .whatsapp-button:hover {
-            background-color: #20b954;
-        }
-
-        /* Estilo para a navegação */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px 0;
-        }
-
-        /* Estilo para os links de navegação */
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            margin: 0 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Estilo para os links de navegação quando passamos o mouse sobre eles */
-        nav a:hover {
-            background-color: #ddd;
-            color: #444;
-        }
-
-        /* Container geral para o conteúdo */
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* Estilo para as seções */
-        .section {
-            margin: 20px 0;
-        }
-
-        /* Estilo para os títulos das seções */
-        .section h2 {
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            color: #444;
-        }
-
-        /* Estilo para os parágrafos dentro das seções */
-        .section p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-
-     
-        /* Estilo para o rodapé da página */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <title>PicaPau Texturas - Contato</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Cabeçalho do site -->
@@ -143,7 +12,8 @@
         <div class="container">
             <!-- Logo da empresa -->
             <img src="images/logofinal.png.png" alt="Logo da Loja de Grafiato" class="logo">
-        
+            <!-- Nome da empresa -->
+            <h1>PicaPau Texturas</h1>
             <!-- Botão do WhatsApp -->
             <a href="https://wa.me/5511995909948" target="_blank" class="whatsapp-button">
                 <img src="images/zap.png" alt="WhatsApp">
@@ -160,40 +30,29 @@
         <a href="contato.html">Contato</a>
     </nav>
 
+    <!-- Conteúdo principal do site -->
     <div class="container">
-       
-    <section id="contato.html" class="contato">
-       
-    <section id="contact" class="contact">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações:</p>
-        <p>Email: picapautexturas@gmail.com.br</p>
-        <p>Telefone: (11) 2296-7837</p>
-        <p>Endereço: Rua Marcos Aper, 10 - São Paulo, SP</p>
+        <section class="section" id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco através do formulário abaixo ou pelo WhatsApp.</p>
+            <form action="enviar_formulario.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
 
-        <div class="social-links">
-            <p>Nos encontre nas redes sociais!</p>
-            <a href="https://www.facebook.com/profile.php?id=61559821162892" target="_blank">Facebook</a>
-            <br></br>
-            <a href="https://www.instagram.com/picapautexturas/" target="_blank">Instagram</a>
-        </div>
-
-        <p><a href="https://wa.me/5511995909948?text=Olá! Gostaria de um orçamento." class="botao-whatsapp">Contato via WhatsApp</a></p>
-
-        <form class="contact-form" action="mailto:picapautexturas@gmail.com.br" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Seu Nome" required>
-             <br></br>
-            <input type="email" name="email" placeholder="Seu Email" required>
-             <br></br>
-            <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Pica pau. Todos os direitos reservados.</p>
-</footer>
-
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2024 PicaPau Texturas. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
