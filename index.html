@@ -11,13 +11,14 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #f9f9f9;
         }
 
         /* Estilo para o cabeçalho da página */
         header {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
-            padding: 1rem 0;
+            padding: 20px 0;
             text-align: center;
         }
 
@@ -25,21 +26,22 @@
         header .container {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 0 20px;
         }
 
         /* Estilo para a logo */
         .logo {
-            width: 200px;
+            width: 200px; /* Aumenta a largura da logo */
             height: auto;
-            margin-bottom: 20px; /* Espaçamento abaixo da logo */
         }
 
         /* Estilo para a navegação */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #444;
+            padding: 10px 0;
         }
 
         /* Estilo para os links de navegação */
@@ -48,6 +50,9 @@
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         /* Estilo para os links de navegação quando passamos o mouse sobre eles */
@@ -70,6 +75,8 @@
         .section h2 {
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #444;
         }
 
         /* Estilo para os parágrafos dentro das seções */
@@ -80,14 +87,18 @@
         /* Estilo para o slider */
         .slider {
             max-width: 100%;
+            height: 300px; /* Define uma altura fixa para o slider */
             position: relative;
-            margin: auto;
+            margin: 20px 0;
             overflow: hidden;
+            border-radius: 10px;
         }
 
         /* Estilo para as imagens do slider */
         .slides img {
             width: 100%;
+            height: 100%; /* Ajusta a altura da imagem ao slider */
+            object-fit: cover; /* Mantém a proporção da imagem */
             display: none;
         }
 
@@ -109,6 +120,8 @@
         <div class="container">
             <!-- Logo da empresa -->
             <img src="images/logofinal.jpg" alt="Logo da Loja de Grafiato" class="logo">
+            <!-- Nome da empresa -->
+            <h1>PicaPau Texturas</h1>
         </div>
     </header>
 
@@ -124,9 +137,9 @@
     <div class="slider">
         <div class="slides">
             <!-- Imagens do slider -->
-            <img src="images/bannerSite.jpg" alt="Banner 1" class="slide">
-            <img src="images/capaFinal.jpg" alt="Banner 2" class="slide">
-            <img src="images/produto1.jpg" alt="Banner 3" class="slide">
+            <img src="images/bannerSite1.jpg" alt="Banner 1" class="slide">
+            <img src="images/bannerSite2.jpg" alt="Banner 2" class="slide">
+            <img src="images/bannerSite3.jpg" alt="Banner 3" class="slide">
         </div>
     </div>
 
