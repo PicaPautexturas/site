@@ -4,157 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PicaPau Texturas</title>
-    <style>
-        /* Estilo global para o corpo da página */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        /* Estilo para o cabeçalho da página */
-        header {
-            background-color: #d3d3d3;
-            color: #333;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Container do cabeçalho para alinhar os elementos centralmente */
-        header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* Estilo para a logo */
-        .logo {
-            width: 150px;
-            height: auto;
-        }
-
-        /* Estilo para o título no cabeçalho */
-        header h1 {
-            font-size: 2rem;
-            margin: 0;
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        /* Estilo para o botão de WhatsApp */
-        .whatsapp-button {
-            display: flex;
-            align-items: center;
-            background-color: #25d366;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Estilo para o ícone do WhatsApp */
-        .whatsapp-button img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-        }
-
-        /* Estilo para o botão de WhatsApp quando passamos o mouse sobre ele */
-        .whatsapp-button:hover {
-            background-color: #20b954;
-        }
-
-        /* Estilo para a navegação */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px 0;
-        }
-
-        /* Estilo para os links de navegação */
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            margin: 0 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Estilo para os links de navegação quando passamos o mouse sobre eles */
-        nav a:hover {
-            background-color: #ddd;
-            color: #444;
-        }
-
-        /* Container geral para o conteúdo */
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* Estilo para as seções */
-        .section {
-            margin: 20px 0;
-        }
-
-        /* Estilo para os títulos das seções */
-        .section h2 {
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            color: #444;
-        }
-
-        /* Estilo para os parágrafos dentro das seções */
-        .section p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-
-        /* Estilo para o slider */
-        .slider {
-            max-width: 100%;
-            height: 400px; /* Ajusta a altura do slider */
-            position: relative;
-            margin: 20px 0;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Estilo para as imagens do slider */
-        .slides img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: none;
-            transition: opacity 1s;
-        }
-
-        /* Estilo para o rodapé da página */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Cabeçalho do site -->
@@ -162,7 +12,8 @@
         <div class="container">
             <!-- Logo da empresa -->
             <img src="images/logofinal.png.png" alt="Logo da Loja de Grafiato" class="logo">
-          
+            <!-- Nome da empresa -->
+            <h1>PicaPau Texturas</h1>
             <!-- Botão do WhatsApp -->
             <a href="https://wa.me/5511995909948" target="_blank" class="whatsapp-button">
                 <img src="images/zap.png" alt="WhatsApp">
@@ -179,35 +30,38 @@
         <a href="contato.html">Contato</a>
     </nav>
 
-    <!-- Slider de imagens -->
-    <div class="slider">
-        <div class="slides">
-            <!-- Imagens do slider -->
-            <img src="images/bannerSlide1.png" alt="Banner 1" class="slide">
-            <img src="images/bannerSlide2.png" alt="Banner 2" class="slide">
-            <img src="images/bannerSlide3.png" alt="Banner 3" class="slide">
-        </div>
-    </div>
-
     <!-- Conteúdo principal do site -->
     <div class="container">
-        <!-- Seção de início -->
-        <section class="section" id="inicio">
-            <h2>Bem-vindo!</h2>
-            <p>Estamos dedicados a fornecer os melhores produtos para texturas e pinturas.</p>
+        <section class="product">
+            <img src="https://via.placeholder.com/150" alt="Produto 1">
+            <div class="product-info">
+                <h3>Produto 1</h3>
+                <p>Descrição do Produto 1. Este é um ótimo produto que oferece muitos benefícios aos nossos clientes. Detalhes e especificações podem ser adicionados aqui.</p>
+            </div>
         </section>
 
-        <!-- Seção de produtos -->
-        <section class="section" id="produtos">
-            <h2>Produtos</h2>
-            <p>Confira nossa ampla gama de produtos de decoração:</p>
-            <ul>
-                <li>Grafiato Branco e colorido</li>
-                <li>Texturas</li>
-                <li>Massa Corrida</li>
-                <li>Tintas Látex</li>
-                <li>Manta Liquida</li>
-            </ul>
+        <section class="product">
+            <img src="https://via.placeholder.com/150" alt="Produto 2">
+            <div class="product-info">
+                <h3>Produto 2</h3>
+                <p>Descrição do Produto 2. Este produto é conhecido por sua excelente qualidade e eficiência. Adicione mais informações relevantes aqui.</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/150" alt="Produto 3">
+            <div class="product-info">
+                <h3>Produto 3</h3>
+                <p>Descrição do Produto 3. Um produto inovador que atende às necessidades dos nossos clientes de maneira eficaz. Descrições detalhadas podem ser incluídas.</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <img src="https://via.placeholder.com/150" alt="Produto 4">
+            <div class="product-info">
+                <h3>Produto 4</h3>
+                <p>Descrição do Produto 4. Este produto oferece uma ótima relação custo-benefício e é altamente recomendado. Mais detalhes podem ser adicionados aqui.</p>
+            </div>
         </section>
     </div>
 
@@ -215,26 +69,5 @@
     <footer>
         <p>&copy; 2024 PicaPau Texturas. Todos os direitos reservados.</p>
     </footer>
-
-    <!-- Script para o slider -->
-    <script>
-        // Variáveis para o controle do slider
-        let slideIndex = 0;
-        showSlides();
-
-        // Função para mostrar os slides
-        function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none"; // Esconde todos os slides
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block"; // Mostra o slide atual
-            setTimeout(showSlides, 3000); // Altera o slide a cada 3 segundos
-        }
-    </script>
 </body>
 </html>
