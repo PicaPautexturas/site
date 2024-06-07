@@ -135,11 +135,15 @@
         }
 
         /* Estilo para as imagens do slider */
-        .slides img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: none;
+        .slides {
+            display: flex;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 400px; /* Altura fixa para o slider */
+            background-size: cover;
+            background-position: center;
             transition: opacity 1s;
         }
 
@@ -161,9 +165,9 @@
     <header>
         <div class="container">
             <!-- Logo da empresa -->
-            <img src="images/logofinal.png.png" alt="Logo da Loja de Grafiato" class="logo">
+            <img src="images/logofinal.png" alt="Logo da Loja de Grafiato" class="logo">
             <!-- Nome da empresa -->
-            <h1>Pica - Pau Texturas</h1>
+            <h1>PicaPau Texturas</h1>
             <!-- Botão do WhatsApp -->
             <a href="https://wa.me/5511995909948" target="_blank" class="whatsapp-button">
                 <img src="images/zap.png" alt="WhatsApp">
@@ -183,10 +187,10 @@
     <!-- Slider de imagens -->
     <div class="slider">
         <div class="slides">
-            <!-- Imagens do slider -->
-            <img src="images/bannerSlide1.png" alt="Banner 1" class="slide">
-            <img src="images/bannerSlide2.png" alt="Banner 2" class="slide">
-            <img src="images/bannerSlide3.png" alt="Banner 3" class="slide">
+            <!-- Imagens do slider como plano de fundo para cobrir o slide inteiro -->
+            <div class="slide" style="background-image: url('images/bannerSlide1.png');"></div>
+            <div class="slide" style="background-image: url('images/bannerSlide2.png');"></div>
+            <div class="slide" style="background-image: url('images/bannerSlide3.png');"></div>
         </div>
     </div>
 
