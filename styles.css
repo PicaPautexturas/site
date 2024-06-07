@@ -38,7 +38,6 @@ header h1 {
     margin: 0;
     flex-grow: 1;
     text-align: center;
-    padding-right: 150px; /* Adiciona espaço à direita do título para alinhamento */
 }
 
 /* Estilo para o botão de WhatsApp */
@@ -117,21 +116,23 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* Estilo para as seções de produto */
-.product {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+/* Estilo para o slider */
+.slider {
+    max-width: 100%;
+    height: auto; /* Ajusta a altura do slider automaticamente */
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.product img {
-    width: 150px;
+/* Estilo para as imagens do slider */
+.slides img {
+    width: 100%;
     height: auto;
-    margin-right: 20px;
-}
-
-.product-info {
-    flex: 1;
+    display: none;
+    transition: opacity 1s;
 }
 
 /* Estilo para o rodapé da página */
