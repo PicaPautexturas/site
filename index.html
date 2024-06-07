@@ -5,61 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PicaPau Texturas</title>
     <style>
+        /* Estilo global para o corpo da página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
         }
+
+        /* Estilo para o cabeçalho da página */
         header {
             background-color: #4CAF50;
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
+
+        /* Container do cabeçalho para alinhar os elementos centralmente */
         header .container {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
+
+        /* Estilo para a logo */
         .logo {
             width: 150px;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Espaçamento abaixo da logo */
         }
-        .banner {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
+
+        /* Estilo para a navegação */
         nav {
             display: flex;
             justify-content: center;
             background-color: #333;
         }
+
+        /* Estilo para os links de navegação */
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
         }
+
+        /* Estilo para os links de navegação quando passamos o mouse sobre eles */
         nav a:hover {
             background-color: #ddd;
             color: black;
         }
+
+        /* Container geral para o conteúdo */
         .container {
             padding: 20px;
         }
+
+        /* Estilo para as seções */
         .section {
             margin: 20px 0;
         }
+
+        /* Estilo para os títulos das seções */
         .section h2 {
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 10px;
         }
+
+        /* Estilo para os parágrafos dentro das seções */
         .section p {
             margin: 10px 0;
         }
+
+        /* Estilo para o slider */
+        .slider {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Estilo para as imagens do slider */
+        .slides img {
+            width: 100%;
+            display: none;
+        }
+
+        /* Estilo para o rodapé da página */
         footer {
             background-color: #333;
             color: white;
@@ -72,13 +104,15 @@
     </style>
 </head>
 <body>
+    <!-- Cabeçalho do site -->
     <header>
         <div class="container">
+            <!-- Logo da empresa -->
             <img src="images/logofinal.jpg" alt="Logo da Loja de Grafiato" class="logo">
-           
         </div>
     </header>
 
+    <!-- Navegação do site -->
     <nav>
         <a href="index.html">Início</a>
         <a href="produtos.html">Produtos</a>
@@ -86,12 +120,25 @@
         <a href="contato.html">Contato</a>
     </nav>
 
+    <!-- Slider de imagens -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Imagens do slider -->
+            <img src="images/bannerSite1.jpg" alt="Banner 1" class="slide">
+            <img src="images/bannerSite2.jpg" alt="Banner 2" class="slide">
+            <img src="images/bannerSite3.jpg" alt="Banner 3" class="slide">
+        </div>
+    </div>
+
+    <!-- Conteúdo principal do site -->
     <div class="container">
+        <!-- Seção de início -->
         <section class="section" id="inicio">
             <h2>Início</h2>
             <p>Bem-vindo ao nosso site! Estamos dedicados a fornecer os melhores produtos para texturas e pinturas.</p>
         </section>
 
+        <!-- Seção de produtos -->
         <section class="section" id="produtos">
             <h2>Produtos</h2>
             <p>Confira nossa ampla gama de produtos de decoração:</p>
@@ -104,8 +151,30 @@
         </section>
     </div>
 
+    <!-- Rodapé do site -->
     <footer>
         <p>&copy; 2024 PicaPau Texturas. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Script para o slider -->
+    <script>
+        // Variáveis para o controle do slider
+        let slideIndex = 0;
+        showSlides();
+
+        // Função para mostrar os slides
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Esconde todos os slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block"; // Mostra o slide atual
+            setTimeout(showSlides, 3000); // Altera o slide a cada 3 segundos
+        }
+    </script>
 </body>
 </html>
