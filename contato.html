@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PicaPau Texturas - Contato</title>
+    <title>Contato - PicaPau Texturas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,8 +12,7 @@
         <div class="container">
             <!-- Logo da empresa -->
             <img src="images/logofinal.png.png" alt="Logo da Loja de Grafiato" class="logo">
-            <!-- Nome da empresa -->
-            <h1>PicaPau Texturas</h1>
+         
             <!-- Botão do WhatsApp -->
             <a href="https://wa.me/5511995909948" target="_blank" class="whatsapp-button">
                 <img src="images/zap.png" alt="WhatsApp">
@@ -33,26 +32,43 @@
     <!-- Conteúdo principal do site -->
     <div class="container">
         <section class="section" id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco através do formulário abaixo ou pelo WhatsApp.</p>
-            <form action="enviar_formulario.php" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
+            <h2>Entre em Contato Conosco</h2>
+            <p>Estamos aqui para ajudá-lo! Sinta-se à vontade para nos contatar através das redes sociais ou enviar uma mensagem diretamente pelo formulário abaixo.</p>
+            
+            <!-- Botões de Redes Sociais -->
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/profile.php?id=61559821162892" target="_blank" class="facebook-button">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/picapautexturas/" target="_blank" class="instagram-button">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/5511995909948" target="_blank" class="whatsapp-button">
+                    <img src="images/zap.png" alt="WhatsApp">
+                </a>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <div class="contact-form">
+                <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </div>
 
     <!-- Rodapé do site -->
     <footer>
-        <p>&copy; 2024 PicaPau Texturas. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Pica Pau Texturas. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
