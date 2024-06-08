@@ -1,33 +1,29 @@
-/* Reset de estilos */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* Estilo global para o corpo da página */
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
     color: #333;
     background-color: #f9f9f9;
-    line-height: 1.6;
 }
 
-/* Estilo para os elementos de cabeçalho */
-header, footer {
-    background-color: #333;
-    color: white;
+/* Estilo para o cabeçalho da página */
+header {
+    background-color: #d3d3d3;
+    color: #333;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Container do cabeçalho para alinhar os elementos centralmente */
 header .container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* Estilo para a logo */
@@ -36,9 +32,17 @@ header .container {
     height: auto;
 }
 
-/* Estilo para o botão do WhatsApp */
+/* Estilo para o título no cabeçalho */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Estilo para o botão de WhatsApp */
 .whatsapp-button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     background-color: #25d366;
     color: white;
