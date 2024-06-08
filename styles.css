@@ -29,7 +29,7 @@ header .container {
 /* Estilo para a logo */
 .logo {
     width: 150px;
-    height: auto;
+    height: left;
 }
 
 /* Estilo para o título no cabeçalho */
