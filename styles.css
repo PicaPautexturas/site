@@ -109,7 +109,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-left: auto; /* Alinha a imagem do banner com a esquerda */
+    margin-left: 0; /* Alinha a imagem do banner com a esquerda */
     margin-right: auto;
 }
 
