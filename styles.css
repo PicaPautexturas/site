@@ -11,8 +11,7 @@ body {
 header {
     background-color: #d3d3d3;
     color: #333;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,7 +19,6 @@ header {
 header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
     max-width: 1200px;
     margin: auto;
@@ -30,6 +28,7 @@ header .container {
 .logo {
     width: 150px;
     height: auto;
+    margin-right: auto; /* Coloca o logo mais à esquerda */
 }
 
 /* Estilo para o título no cabeçalho */
@@ -49,7 +48,7 @@ header h1 {
     padding: 5px 10px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Diminui o tamanho do botão */
     transition: background-color 0.3s ease;
 }
 
@@ -110,7 +109,8 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin-left: auto; /* Alinha a imagem do banner com a esquerda */
+    margin-right: auto;
 }
 
 /* Estilo para os depoimentos dos clientes */
