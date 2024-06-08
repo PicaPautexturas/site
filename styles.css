@@ -109,6 +109,7 @@ nav a:hover {
     padding-bottom: 10px;
     margin-bottom: 20px;
     color: #444;
+    text-align: center; /* Centraliza os títulos das seções */
 }
 
 /* Estilo para os parágrafos dentro das seções */
