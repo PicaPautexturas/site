@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PicaPau Texturas - Início</title>
+    <title>Início - PicaPau Texturas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,62 +29,54 @@
         <a href="contato.html">Contato</a>
     </nav>
 
-    <!-- Slider de imagens -->
-    <div class="slider">
-        <div class="slides">
-            <!-- Imagens do slider -->
-            <img src="images/bannerSlide1.png" alt="Banner 1" class="slide">
-            <img src="images/bannerSlide2.png" alt="Banner 2" class="slide">
-            <img src="images/bannerSlide3.png" alt="Banner 3" class="slide">
-        </div>
-    </div>
-
     <!-- Conteúdo principal do site -->
     <div class="container">
-        <!-- Seção de início -->
-        <section class="section" id="inicio">
-            <h2>Bem-vindo!</h2>
-            <p>Estamos dedicados a fornecer os melhores produtos para texturas e pinturas.</p>
+        <!-- Seção de Boas-Vindas -->
+        <section class="section" id="boas-vindas">
+            <h2>Bem-vindo à PicaPau Texturas</h2>
+            <p>Somos especialistas em texturas e pinturas, fornecendo produtos de alta qualidade e serviços excepcionais para satisfazer todas as suas necessidades de decoração.</p>
         </section>
 
-        <!-- Seção de produtos -->
-        <section class="section" id="produtos">
-            <h2>Produtos</h2>
-            <p>Confira nossa ampla gama de produtos de decoração:</p>
+        <!-- Seção de Serviços -->
+        <section class="section" id="servicos">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma ampla gama de serviços, incluindo:</p>
             <ul>
-                <li>Grafiato Branco e colorido</li>
-                <li>Texturas</li>
-                <li>Massa Corrida</li>
-                <li>Tintas Látex</li>
-                <li>Manta Liquida</li>
+                <li>Aplicação de texturas e grafiato</li>
+                <li>Pintura residencial e comercial</li>
+                <li>Reforma e restauração de fachadas</li>
+                <li>Consultoria em decoração de interiores</li>
             </ul>
+        </section>
+
+        <!-- Galeria de Imagens -->
+        <section class="section" id="galeria">
+            <h2>Nossa Galeria</h2>
+            <div class="image-gallery">
+                <img src="images/galeria1.jpg" alt="Imagem 1">
+                <img src="images/galeria2.jpg" alt="Imagem 2">
+                <img src="images/galeria3.jpg" alt="Imagem 3">
+                <img src="images/galeria4.jpg" alt="Imagem 4">
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section class="section" id="depoimentos">
+            <h2>Depoimentos dos Clientes</h2>
+            <div class="testimonial">
+                <p>"Excelente serviço! A equipe da PicaPau Texturas transformou completamente o visual da minha casa. Recomendo!"</p>
+                <p>- Maria Silva</p>
+            </div>
+            <div class="testimonial">
+                <p>"Profissionais altamente qualificados e atenciosos. Fiquei muito satisfeito com o resultado final."</p>
+                <p>- João Oliveira</p>
+            </div>
         </section>
     </div>
 
     <!-- Rodapé do site -->
     <footer>
-        <p>&copy; 2024 PicaPau Texturas. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Pica Pau Texturas. Todos os direitos reservados.</p>
     </footer>
-
-    <!-- Script para o slider -->
-    <script>
-        // Variáveis para o controle do slider
-        let slideIndex = 0;
-        showSlides();
-
-        // Função para mostrar os slides
-        function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none"; // Esconde todos os slides
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block"; // Mostra o slide atual
-            setTimeout(showSlides, 3000); // Altera o slide a cada 3 segundos
-        }
-    </script>
 </body>
 </html>
