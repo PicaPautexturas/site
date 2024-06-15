@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <!-- Logo da empresa -->
-            <img src="images/logofinal.png.png" alt="Logo da Loja de Grafiato" class="logo">
+            <img src="images/logofinal.png" alt="Logo da Loja de Grafiato" class="logo">
          
             <!-- Botão do WhatsApp -->
             <a href="https://wa.me/5511995909948" target="_blank" class="whatsapp-button">
@@ -33,10 +33,9 @@
     <div class="slider">
         <div class="slides">
             <!-- Imagens do slider -->
-           <img src="images/bannerSlide1.png" alt="Banner 3" class="slide">  
-            <img src="images/bannerSlide2.png" alt="Banner 3" class="slide">  
-            <img src="images/bannerSlide3.png" alt="Banner 3" class="slide">  
-             
+            <img src="images/bannerSlide1.png" alt="Banner 1" class="slide">
+            <img src="images/bannerSlide2.png" alt="Banner 2" class="slide">
+            <img src="images/bannerSlide3.png" alt="Banner 3" class="slide">
         </div>
     </div>
 
@@ -44,48 +43,53 @@
     <div class="container">
         <!-- Seção de início -->
         <section class="section" id="inicio">
-            <h2>Bem-vindo!</h2>
-            <p>Estamos dedicados a fornecer os melhores produtos para texturas e pinturas.</p>
+            <h2>Bem-vindo à PicaPau Texturas!</h2>
+            <p> Nossa missão é fornecer produtos de altíssima qualidade para texturas e pinturas, ajudando você a transformar cada espaço em uma verdadeira obra de arte. 
+                <br>Conte conosco para trazer beleza, durabilidade e inovação para seus projetos.</p>
         </section>
 
         <!-- Seção de produtos -->
         <section class="section" id="produtos">
-            <h2>Produtos</h2>
-            <p>Confira nossa ampla gama de produtos de decoração:</p>
-            <ul>
-                <li>Grafiato Branco e colorido</li>
-                <li>Texturas</li>
-                <li>Massa Corrida</li>
-                <li>Tintas Látex</li>
-                <li>Manta Liquida</li>
-            </ul>
+            <h2>Aplicações e Indicações de uso</h2>
+            <div class="product-banners">
+                <div class="banner">
+                    <div class="slides">
+                        <img src="images/appbanner14.png" alt="Produto 1 - Slide 3" class="slide">
+                        <img src="images/appbanner1.png" alt="Produto 1 - Slide 1" class="slide">
+                        <img src="images/appbanner10.png" alt="Produto 1 - Slide 3" class="slide">
+                        <img src="images/appbanner2.png" alt="Produto 1 - Slide 2" class="slide">
+                        <img src="images/appbanner3.png" alt="Produto 1 - Slide 3" class="slide">
+                       
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="slides">
+                        <img src="images/appbanner11.png" alt="Produto 1 - Slide 3" class="slide">
+                        <img src="images/appbanner5.png" alt="Produto 2 - Slide 2" class="slide">
+                        <img src="images/appbanner4.png" alt="Produto 2 - Slide 1" class="slide">
+                        <img src="images/appbanner13.png" alt="Produto 1 - Slide 3" class="slide">
+                        <img src="images/appbanner6.png" alt="Produto 2 - Slide 3" class="slide">
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="slides">
+                        <img src="images/appbanner7.png" alt="Produto 3 - Slide 1" class="slide">
+                        <img src="images/appbanner12.png" alt="Produto 1 - Slide 3" class="slide">
+                        <img src="images/appbanner9.png" alt="Produto 3 - Slide 3" class="slide">
+                        <img src="images/appbanner8.png" alt="Produto 3 - Slide 2" class="slide">
+                       
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
+    <!-- Inclua o JavaScript -->
+    <script src="scripts.js"></script>
+
     <!-- Rodapé do site -->
     <footer>
-        <p>&copy; 2024 PicaPau Texturas. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Pica Pau Texturas. Telefone (11)  995 909 948.</p>
     </footer>
-
-    <!-- Script para o slider -->
-    <script>
-        // Variáveis para o controle do slider
-        let slideIndex = 0;
-        showSlides();
-
-        // Função para mostrar os slides
-        function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none"; // Esconde todos os slides
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block"; // Mostra o slide atual
-            setTimeout(showSlides, 3000); // Altera o slide a cada 3 segundos
-        }
-    </script>
 </body>
 </html>
