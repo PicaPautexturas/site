@@ -5,23 +5,35 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* Container principal ajustado */
 .container {
     max-width: 1920px;
     margin: 0 auto;
     padding: 20px;
 }
+
+/* Flexbox no cabeçalho */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* Estilo do cabeçalho */
 header {
     background: linear-gradient(45deg, #ff8c00, #ffdd57);
     padding: 10px 0;
+    max-width: 1920px;
+    margin: 0 auto;
 }
+
+/* Ajuste da logo */
 .logo {
-    width: 800px;
+    width: 700px;
 }
+
+/* Botão do WhatsApp */
 .whatsapp-button {
     display: inline-block;
     background: #25d366;
@@ -35,41 +47,59 @@ header {
     width: 20px;
     vertical-align: middle;
 }
+
+/* Navegação */
 nav {
     background-color: #333;
     padding: 10px 0;
     text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 55px;
-    font-size: px;
+    margin: 0 50px;
+    font-size: 20px;
 }
 nav a:hover {
     text-decoration: underline;
 }
+
+/* Slider */
 .slider {
     margin: 20px 0;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .slides img {
     width: 100%;
     border-radius: 10px;
 }
+
+/* Seções */
 .section {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1920px;
+    margin: 20px auto;
 }
+
+/* Título das seções */
 h2 {
     color: #ff8c00;
 }
+
+/* Banners de produtos */
 .product-banners {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .banner {
     flex: 1;
@@ -82,47 +112,94 @@ h2 {
 .banner img {
     width: 100%;
 }
+
+/* Box de boas-vindas */
+.welcome-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px; /* Aumente o valor para um arredondamento mais suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+    margin: 2 auto;
+    text-align: left;
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
+    max-width: 1920px;
+    margin: 0 auto;
 }
+
+/* Ajuste do container para flex */
 .container {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .item {
-    flex: 1 1 100%;
-  }
-  
-  /* Exemplo de Grid */
-  .grid-container {
+}
+
+/* Exemplo de Grid */
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     width: 100%;
-  }
-  /* Estilos para telas maiores */
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Estilos para telas maiores */
 body {
     font-size: 16px;
     padding: 20px;
-  }
-  
-  /* Estilos para telas menores */
-  @media (max-width: 768px) {
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
     body {
-      font-size: 14px;
-      padding: 10px;
+        font-size: 14px;
+        padding: 10px;
     }
-  }
-  
-  /* Estilos para telas muito pequenas */
-  @media (max-width: 480px) {
+    .logo {
+        width: 200px; /* Ajuste o tamanho da logo para telas menores */
+    }
+    .header-container {
+        flex-direction: column;
+    }
+    .whatsapp-button {
+        margin-top: 10px;
+    }
+    .section {
+        width: calc(100% - 20px); /* Ajuste a largura da seção para telas menores */
+    }
+    nav a {
+        margin: 0 10px;
+        display: block;
+    }
+    .welcome-box {
+        width: calc(100% - 20px); /* Ajuste a largura da box para telas menores */
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 480px) {
     body {
-      font-size: 12px;
-      padding: 5px;
+        font-size: 12px;
+        padding: 5px;
     }
-  }
-  
+    .logo {
+        width: 150px; /* Ajuste o tamanho da logo para telas muito pequenas */
+    }
+    .section {
+        width: calc(100% - 10px); /* Ajuste a largura da seção para telas muito pequenas */
+    }
+    nav a {
+        margin: 0 5px;
+        font-size: 16px;
+    }
+    .welcome-box {
+        width: calc(100% - 10px); /* Ajuste a largura da box para telas muito pequenas */
+    }
+}
