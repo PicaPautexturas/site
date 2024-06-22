@@ -44,7 +44,7 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 55px;
-    font-size: 18px;
+    font-size: px;
 }
 nav a:hover {
     text-decoration: underline;
@@ -88,3 +88,41 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1 1 100%;
+  }
+  
+  /* Exemplo de Grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  /* Estilos para telas maiores */
+body {
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos para telas muito pequenas */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  
