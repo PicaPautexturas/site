@@ -1,205 +1,202 @@
-body {
+/* CSS atualizado com o ajuste no tamanho do texto do endereço */
+
+.body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    font-size: 1rem;
+    padding: 1.25rem;
 }
 
-/* Container principal ajustado */
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
-/* Flexbox no cabeçalho */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Estilo do cabeçalho */
 header {
     background: linear-gradient(45deg, #ff8c00, #ffdd57);
-    padding: 10px 0;
+    padding: 0.625rem 0;
     max-width: 1920px;
     margin: 0 auto;
 }
 
-/* Ajuste da logo */
 .logo {
-    width: 700px;
+    width: 35.938rem;
 }
 
-/* Botão do WhatsApp */
 .whatsapp-button {
     display: inline-block;
     background: #25d366;
     color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 3.125rem;
     text-decoration: none;
     font-weight: bold;
 }
+
 .whatsapp-icon {
-    width: 20px;
+    width: 1.25rem;
     vertical-align: middle;
 }
 
-/* Navegação */
 nav {
     background-color: #333;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     text-align: center;
     max-width: 1920px;
     margin: 0 auto;
 }
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 50px;
-    font-size: 20px;
+    margin: 0 3.125rem;
+    font-size: 1.25rem;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
 
-/* Slider */
 .slider {
-    margin: 20px 0;
+    margin: 1.25rem 0;
     max-width: 1920px;
     margin: 0 auto;
 }
+
 .slides img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
-/* Seções */
 .section {
     background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
     max-width: 1920px;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 
-/* Título das seções */
 h2 {
     color: #ff8c00;
 }
 
-/* Banners de produtos */
 .product-banners {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
     max-width: 1920px;
     margin: 0 auto;
 }
+
 .banner {
     flex: 1;
-    min-width: 300px;
+    min-width: 18.75rem;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
+
 .banner img {
     width: 100%;
 }
 
-/* Box de boas-vindas */
-.welcome-box {
+.welcome-box, .endereco-box {
     background-color: white;
-    padding: 20px;
-    border-radius: 15px; /* Aumente o valor para um arredondamento mais suave */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 98%;
-    margin: 2 auto;
+    padding: 1.25rem;
+    border-radius: 0.938rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    margin: 0.625rem auto;
     text-align: left;
+    flex: 1 1 calc(33.333% - 2.5rem);
+    box-sizing: border-box;
+    max-width: 1920px;
 }
 
-/* Rodapé */
+.endereco-box .endereco-text {
+    font-size: 10rem; /* Ajuste o tamanho do texto do endereço conforme necessário */
+    font-weight: bold; /* Opcional, se quiser que o texto fique em negrito */
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     max-width: 1920px;
     margin: 0 auto;
+    border-top: 1px solid #ddd;
+    margin-top: 1.25rem;
 }
 
-/* Ajuste do container para flex */
-.container {
+.product-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
-/* Exemplo de Grid */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
 }
 
-/* Estilos para telas maiores */
-body {
-    font-size: 16px;
-    padding: 20px;
+.product {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 0.313rem;
+    padding: 0.625rem;
+    background-color: #f9f9f9;
+    flex: 1;
 }
 
-/* Estilos para telas menores */
+.product img {
+    max-width: 9.375rem;
+    border-radius: 0.313rem;
+    margin-right: 1.25rem;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h3 {
+    margin: 0 0 0.625rem;
+}
+
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 0.875rem;
+        padding: 0.625rem;
     }
+
     .logo {
-        width: 200px; /* Ajuste o tamanho da logo para telas menores */
+        width: 12.5rem;
     }
+
     .header-container {
         flex-direction: column;
     }
-    .whatsapp-button {
-        margin-top: 10px;
-    }
-    .section {
-        width: calc(100% - 20px); /* Ajuste a largura da seção para telas menores */
-    }
-    nav a {
-        margin: 0 10px;
-        display: block;
-    }
-    .welcome-box {
-        width: calc(100% - 20px); /* Ajuste a largura da box para telas menores */
-    }
-}
 
-/* Estilos para telas muito pequenas */
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-        padding: 5px;
+    .welcome-box, .endereco-box {
+        flex: 1 1 100%;
     }
-    .logo {
-        width: 150px; /* Ajuste o tamanho da logo para telas muito pequenas */
-    }
-    .section {
-        width: calc(100% - 10px); /* Ajuste a largura da seção para telas muito pequenas */
-    }
-    nav a {
-        margin: 0 5px;
-        font-size: 16px;
-    }
-    .welcome-box {
-        width: calc(100% - 10px); /* Ajuste a largura da box para telas muito pequenas */
+
+    .endereco-box .endereco-text {
+        font-size: 1.5rem; /* Ajuste o tamanho do texto do endereço para telas menores */
     }
 }
