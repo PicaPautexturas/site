@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PicaPau Texturas - Início</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Cabeçalho do site -->
@@ -23,21 +24,26 @@
 
     <!-- Navegação do site -->
     <nav>
-        <a href="index.html">Início</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="contato.html">Contato</a>
+        <div class="container nav-container">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+        </div>
     </nav>
 
     <!-- Conteúdo principal do site -->
     <div class="container">
         <section class="section" id="contato">
-          
-            <p>Tem alguma dúvida ou precisa de assistência para escolher o produto certo? 
-                <br>Nossa equipe está sempre pronta para ajudar. 
-                <br>Entre em contato conosco pelo telefone, e-mail ou WhatsApp, e descubra como podemos colaborar para transformar seus projetos em realidade.
-                <br> Nosso Telefone é (11)  995 909 948.</p>
-                <br>
-                <h2>Clique abaixo e seja direcionado para nossas redes sociais!</h2>
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou precisa de assistência para escolher o produto certo? Nossa equipe está sempre pronta para ajudar. Entre em contato conosco pelo telefone, e-mail ou WhatsApp, e descubra como podemos colaborar para transformar seus projetos em realidade.</p>
+            <h3>Nosso Telefone é (11) 995 909 948.</h3>
+
+            <div class="endereco-box">
+                <h2>Venha até nossa loja!</h2>
+                <p>Rua Marcos Aper, 10 - Jardim Imperador, São Paulo - SP.</p>
+            </div>
+
+            <h2>Siga-nos nas Redes Sociais</h2>
             <!-- Botões de Redes Sociais -->
             <div class="social-buttons">
                 <a href="https://www.facebook.com/profile.php?id=61559821162892" target="_blank" class="facebook-button">
@@ -47,30 +53,14 @@
                     <img src="images/insta.png" alt="Instagram">
                 </a>
             </div>
-  <br><br/>
-  <h2>Ou envie-nos um e-mail!</h2>
-            <!-- Formulário de Contato -->
-            <div class="contact-form">
-                <form action="mailto:texturaspicapau@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required>
-                    <br><br/>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
-                    <br><br/>
-                    <label for="message">Mensagem</label>
-                    <br><br/>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
         </section>
     </div>
 
     <!-- Rodapé do site -->
     <footer>
-        <p>&copy; 2024 Pica Pau Texturas. Telefone (11)  995 909 948.</p>
+        <div class="container">
+            <p>&copy; 2024 Pica Pau Texturas. Telefone (11) 995 909 948.</p>
+        </div>
     </footer>
 </body>
 </html>
