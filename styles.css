@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 h2 {
-    color: #ff8c00;
+    color: #d49c58;
     margin-bottom: 20px;
 }
 
@@ -100,7 +100,7 @@ h2 {
 
 .banner {
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
